@@ -8,6 +8,20 @@
     <title>Yii begin</title>
 </head>
 <body>
+	<?php 
+
+		\yii\bootstrap\navBar::begin([
+			'brandLabel' => 'BEGIN',
+			'brandUrl' => Yii::$app->homeUrl,
+			'options' => [
+
+				'class' => 'navbar-default navbar-fixed-top'
+			]
+		]);
+
+		\yii\bootstrap\navBar::end();
+	?>
+
     <?= $content; ?>
 </body>
 </html><?php
