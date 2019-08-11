@@ -7,6 +7,29 @@ namespace app\controllers;
 
         public function actionIndex(){
 
+
+
+            \Yii::debug('Hello form actionIndex');
+
             return $this->render('index');
+        }
+        // public function actionJoin(){
+
+        //     return $this->render('join');
+        // }
+        // public function actionLogin(){
+
+        //     return $this->render('login');
+        // }
+
+
+
+        public function actionJoin(){
+
+            return $this->render('join');
+        }
+        public function actionLogin(){
+
+            return $this->render('login');
         }
     }
